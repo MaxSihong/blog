@@ -2,11 +2,12 @@
 
 namespace {{ namespace }};
 
+use EloquentFilter\Filterable;
 use App\Utils\SoftDeletes;
 
 class {{ class }} extends Base
 {
-    use SoftDeletes;
+    use Filterable, SoftDeletes;
 
     protected $table = '{{ class }}';
 

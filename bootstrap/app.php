@@ -41,6 +41,9 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->register(EloquentFilter\LumenServiceProvider::class);
+config(['eloquentfilter.namespace' => "App\\Models\\ModelFilters\\"]);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
