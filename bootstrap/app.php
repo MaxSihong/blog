@@ -42,7 +42,6 @@ $app->singleton(
 );
 
 $app->register(EloquentFilter\LumenServiceProvider::class);
-config(['eloquentfilter.namespace' => "App\\Models\\ModelFilters\\"]);
 
 /*
 |--------------------------------------------------------------------------
