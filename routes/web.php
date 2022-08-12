@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+// Documentation..
+Route::get('/', [\BinaryTorch\LaRecipe\Http\Controllers\DocumentationController::class, 'index'])->name('index');
+Route::get('/{version}/{page?}', [\BinaryTorch\LaRecipe\Http\Controllers\DocumentationController::class, 'show'])->where('page', '(.*)')->name('show');
