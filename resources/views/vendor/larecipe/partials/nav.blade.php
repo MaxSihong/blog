@@ -27,8 +27,6 @@
                 </larecipe-button>
             @endif
 
-            <a href="https://beian.miit.gov.cn" target="_blank" class="flex items-center flex-no-shrink text-black mx-4">粤ICP备19145754号</a>
-
             <larecipe-button tag="a" href="https://github.com/MaxSihong/blog" target="__blank" type="black" class="mx-2 px-4">
                 <i class="fab fa-github"></i>
             </larecipe-button>
