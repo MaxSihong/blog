@@ -123,6 +123,8 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'gd_token' => env('GD_TOKEN', ''),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
